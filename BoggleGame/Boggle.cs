@@ -71,8 +71,8 @@ namespace BoggleGame
         {
             uxMinLabel.Text = "3";
             uxSecLabel.Text = "00";
-            _minutes = 3;
-            _seconds = 0;
+            _minutes = 0;
+            _seconds = 3;
             Button button = (Button)sender;
             if (button.Text.Equals("Play Little Boggle"))
             {
@@ -172,7 +172,7 @@ namespace BoggleGame
         /// </summary>
         private void playSound()
         {//C:\Users\slkra\OneDrive\Desktop\VirtualGames\media.io_endSound.wav
-            SoundPlayer endAlert = new SoundPlayer(@"C:\Users\slkra\OneDrive\Desktop\VirtualGames\Boggle\soundFiles\warning_horn.wav");
+            SoundPlayer endAlert = new SoundPlayer(@"..\BoggleGame\soundFiles\warning_horn.wav");
             endAlert.Play();
         }
 
